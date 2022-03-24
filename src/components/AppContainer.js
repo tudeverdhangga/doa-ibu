@@ -3,7 +3,7 @@ import { FaHome, IconName } from "react-icons/fa";
 import NavBar from "./NavBar";
 import FooterBar from "./FooterBar";
 import { useLocation, Redirect } from "react-router-dom";
-import {Button} from "@mui/material";
+import NewsSection from "./news-section";
 
 const AppContainer = (props) => {
   const location = useLocation();
@@ -25,9 +25,9 @@ const AppContainer = (props) => {
   };
 
   return (
-    <div>
-      <h1>Content</h1>
-    </div>
+    <>
+      <NewsSection />
+    </>
   );
 };
 
