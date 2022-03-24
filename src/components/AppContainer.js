@@ -25,14 +25,9 @@ const AppContainer = (props) => {
   };
 
   return (
-    <>
-      <div className="header">
-          <Button variant="text">Text</Button>
-        <NavBar />
-      </div>
-
-      <FooterBar />
-    </>
+    <div>
+      <h1>Content</h1>
+    </div>
   );
 };
 
