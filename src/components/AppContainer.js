@@ -1,9 +1,9 @@
 import React from "react";
 import { FaHome, IconName } from "react-icons/fa";
-import { Card, Container, Row, Col, Breadcrumb, Toast } from "react-bootstrap";
 import NavBar from "./NavBar";
 import FooterBar from "./FooterBar";
 import { useLocation, Redirect } from "react-router-dom";
+import {Button} from "@mui/material";
 
 const AppContainer = (props) => {
   const location = useLocation();
@@ -27,64 +27,10 @@ const AppContainer = (props) => {
   return (
     <>
       <div className="header">
+          <Button variant="text">Text</Button>
         <NavBar />
       </div>
 
-      <div className="pasien-body">
-        {location.pathname !== "/pasien" && (
-          <>
-            <Breadcrumb
-              bsPrefix
-              className="mx-3 mt-2"
-              style={{
-                borderRadius: "30px",
-                paddingTop: "15px",
-                paddingBottom: "20px",
-                backgroundColor: "#EBF5F7",
-              }}
-            >
-              <Breadcrumb.Item
-                href="/"
-                style={{
-                  float: "left",
-                }}
-              >
-                <span>
-                  <FaHome />
-                  <i className="mr-2" />
-                  Home
-                </span>
-              </Breadcrumb.Item>
-              <Breadcrumb.Item
-                active
-                style={{
-                  float: "left",
-                }}
-              >
-                {getPathName(location.pathname)}
-              </Breadcrumb.Item>
-            </Breadcrumb>
-            <div className="body-title ml-5 mt-2">{title}</div>
-          </>
-        )}
-
-        {/*<Switch>*/}
-          {/*{APP_PATIENT_ROUTE.map((value, key) => {*/}
-          {/*  return (*/}
-          {/*    <PasienRoute*/}
-          {/*      key={key}*/}
-          {/*      setTitle={setTitle}*/}
-          {/*      pageName={value.name}*/}
-          {/*      component={value.component}*/}
-          {/*      path={value.path}*/}
-          {/*      exact={value.exact}*/}
-          {/*      isPasien={value.isPasien}*/}
-          {/*      isNotFound={value.isNotFound}*/}
-          {/*    />*/}
-          {/*  );*/}
-          {/*})}*/}
-        {/*</Switch>*/}
-      </div>
       <FooterBar />
     </>
   );
