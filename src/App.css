@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.pens-primary {
+  background-color: #103968;
+}
+
+/* Banner header */
+.pens-banner video {
+  display: block;
+  vertical-align: baseline;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%);
+}
+
+/* Statistic Area */
+.statistic-area {
+  position: relative;
+  background-image: url(../public/asset/banner_pens.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  opacity: 0.92
+}
+.statistic-area .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 49, 95, 0.85);
+}
+.textwidget {
+  width: 250px;
+  padding: 0 1rem;
+}
