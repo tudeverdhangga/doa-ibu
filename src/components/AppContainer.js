@@ -4,6 +4,11 @@ import NavBar from "./NavBar";
 import FooterBar from "./FooterBar";
 import { useLocation, Redirect } from "react-router-dom";
 import NewsSection from "./news-section";
+import PensTVSection from "./pens-tv";
+import ProgramPens from "./program-pens";
+import Banner from './banner'
+import StatisticArea from './statistic-area';
+
 
 const AppContainer = (props) => {
   const location = useLocation();
@@ -26,9 +31,12 @@ const AppContainer = (props) => {
 
   return (
     <>
+      <Banner />
       <NewsSection />
+      <ProgramPens />
+      <PensTVSection />
+      <StatisticArea />
     </>
-
   );
 };
 
