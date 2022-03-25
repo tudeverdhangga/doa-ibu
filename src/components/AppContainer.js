@@ -33,9 +33,9 @@ const AppContainer = (props) => {
     <>
       <Banner />
       <NewsSection />
+      <StatisticArea />
       <ProgramPens />
       <PensTVSection />
-      <StatisticArea />
     </>
   );
 };
