@@ -1,5 +1,6 @@
-import JumbotronSection from "../components/jumbotron-section";
+import Banner from "../components/banner";
 import NewsSection from "../components/news-section";
 import PensTVSection from "../components/pens-tv";
+import StatisticArea from "../components/statistic-area"
 
-export{JumbotronSection, NewsSection, PensTVSection}
+export{Banner, NewsSection, PensTVSection, StatisticArea}

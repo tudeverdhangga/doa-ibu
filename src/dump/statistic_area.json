@@ -1,0 +1,24 @@
+{
+    "statistic": [
+        {
+            "label": "Tahun Berdiri",
+            "total": "1986",
+            "duration": "1"
+        },
+        {
+            "label": "Mahasiswa",
+            "total": "3762",
+            "duration": "1"
+        },
+        {
+            "label": "Program Studi",
+            "total": "24",
+            "duration": "1"
+        },
+        {
+            "label": "Dosen",
+            "total": "188",
+            "duration": "1"
+        }        
+    ]
+}

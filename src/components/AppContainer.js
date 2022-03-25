@@ -4,6 +4,9 @@ import NavBar from "./NavBar";
 import FooterBar from "./FooterBar";
 import { useLocation, Redirect } from "react-router-dom";
 import NewsSection from "./news-section";
+import Banner from './banner'
+import StatisticArea from './statistic-area';
+
 
 const AppContainer = (props) => {
   const location = useLocation();
@@ -26,7 +29,9 @@ const AppContainer = (props) => {
 
   return (
     <>
+      <Banner />
       <NewsSection />
+      <StatisticArea />
     </>
   );
 };
