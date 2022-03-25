@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.about-header {
+  background-image: url('../public/asset/banner_pens_2.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+}
