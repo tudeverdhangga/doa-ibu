@@ -3,7 +3,7 @@
 const PensTVSection = () =>{
     return(
         <div className="static block">
-            <div className="absolute flex flex-col w-2/3 h-screen px-16 pt-[150px] bg-[#103968]">
+            <div className="absolute flex flex-col w-2/3 h-screen px-16 pt-[150px] bg-[#103968] pens-tv">
                 <div className="flex border-l border-white pl-20">
                     <p className="uppercase font-roboto font-normal tracking-widest text-white text-[56px]">pens tv</p>
                 </div>
