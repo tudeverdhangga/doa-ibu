@@ -44,13 +44,13 @@ const NavBar = (props) => {
           <div className="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
             <ul className="navbar-nav flex flex-col pl-0 list-style-none ml-auto text-[14px] font-medium">
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#">HOME</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/">HOME</a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#">ABOUT US</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/about">ABOUT US</a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#">STUDY AT PENS</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/academic">STUDY AT PENS</a>
               </li>
               <li className="nav-item px-2">
                 <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#">CONTACT</a>
