@@ -1,0 +1,20 @@
+{
+    "program": [
+        {
+            "department": "departemen teknik elektro",
+            "detail": "Departemen Elektro memuat beberapa program studi yang ada sejak awal berdirinya Politeknik Elektronika Negeri Surabaya. Departemen ini mencakup tiga disiplin ilmu yakni Elektronika ..."
+        },
+        {
+            "department": "departemen teknik informatika dan komputer",
+            "detail": "Pada saat ini kebutuhan akan teknologi informasi memegang peranan yang sangat penting dan dimasa yang akan datang akan menjadi tulang punggung pertumbuhan ekonomi..."
+        },
+        {
+            "department": "departemen teknik mekanika energi",
+            "detail": "Departemen Teknik Mekanika Energi (DTME) merupakan departemen yang terdiri dari dua program studi, yaitu Sarjana Terapan Teknik Mekatronika dan Sarjana Terapan ..."
+        },
+        {
+            "department": "departemen teknologi multimedia kreatif",
+            "detail": "Departemen Teknologi Multimedia Kreatif (DTMK) Politeknik Elektronika Negeri Surabaya (PENS) diresmikan pada tahun 2012. Departemen ini menaungi dua ..."
+        }              
+    ]
+}
