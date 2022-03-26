@@ -46,15 +46,19 @@ function NewsDetailPage(props) {
                                 news.news.map((value, idx) => {
                                     return (
                                         <div key={idx} className="mt-12 flex justify-center">
-                                            <div className="rounded-lg shadow-lg bg-white max-w-sm text-justify">
-                                                <a href="#!">
-                                                    <img className="rounded-t-lg" src={`/asset/${value.img}`}
-                                                         alt=""/>
-                                                </a>
-                                                <div className="p-6">
-                                                    <h5 className="text-gray-900 text-sm font-medium">{value.header.title}</h5>
+                                            <Link
+                                                to={`/news/3`}
+                                            >
+                                                <div className="rounded-lg shadow-lg bg-white max-w-sm text-justify">
+                                                    <a href="#!">
+                                                        <img className="rounded-t-lg" src={`/asset/${value.img}`}
+                                                             alt=""/>
+                                                    </a>
+                                                    <div className="p-6">
+                                                        <h5 className="text-gray-900 text-sm font-medium">{value.header.title}</h5>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         </div>
                                     )
                                 }) : ''
