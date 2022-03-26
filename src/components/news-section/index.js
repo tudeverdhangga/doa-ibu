@@ -69,7 +69,7 @@ const NewsSection = () =>{
 
     return(
         <div className="h-auto pb-20">
-            <div id="carouselExampleCaptions" className="carousel slide relative w-full overflow-x-hidden h-[450px] px-20" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" className="px-5 carousel slide relative w-full overflow-x-hidden h-[450px]" data-bs-ride="carousel">
                 <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button
                     type="button"
@@ -93,7 +93,7 @@ const NewsSection = () =>{
                     ></button>
                 </div>
                 <div className="carousel-inner relative w-full overflow-hidden py-10">
-                    <div className="carousel-item active relative px-5 float-left w-full bg-white">
+                    <div className="carousel-item active relative float-left w-full bg-white">
                         <img
                             src={news[0].img}
                             className="block w-[560px] h-[360px] shadow-xl shadow-zinc-300"
@@ -107,7 +107,7 @@ const NewsSection = () =>{
                             <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider">Baca selengkapnya</button>
                         </div>
                     </div>
-                    <div className="carousel-item relative px-5 float-left w-full bg-whit">
+                    <div className="carousel-item relative float-left w-full bg-whit">
                     <img
                         src={news[1].img}
                         className="block w-[560px] h-[360px] shadow-xl shadow-zinc-300"
@@ -121,7 +121,7 @@ const NewsSection = () =>{
                         <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider">Baca selengkapnya</button>
                     </div>
                     </div>
-                    <div className="carousel-item relative px-5 float-left w-full bg-whit">
+                    <div className="carousel-item relative float-left w-full bg-whit">
                     <img
                         src={news[2].img}
                         className="block w-[560px] h-[360px] shadow-xl shadow-zinc-300"
