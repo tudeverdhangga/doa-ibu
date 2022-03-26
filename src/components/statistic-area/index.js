@@ -7,7 +7,7 @@ const StatisticArea = () => {
         <>
             <div className="statistic-area py-20">
                 <div className="layer"></div>
-                <div className="container relative text-center flex justify-center text-white">
+                <div className="mx-auto container relative text-center flex justify-center text-white">
                     {statistic_area.statistic?.map(item => 
                         <Item data={item} />
                     )}
