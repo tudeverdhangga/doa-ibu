@@ -7,7 +7,7 @@ const ProgramPens = () =>{
                     <p class="text-gray-700 text-base font-roboto mb-4 mt-11">
                         Departemen Elektro memuat beberapa program studi yang ada sejak awal berdirinya Politeknik Elektronika Negeri Surabaya. Departemen ini mencakup tiga disiplin ilmu yakni Elektronika ...
                     </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition duration-150 ease-in-out">Baca selengkapnya</button>
+                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 transition ease-in-out">Baca selengkapnya</button>
                 </div>
             </div>
             <div class="flex justify-center">
@@ -16,7 +16,7 @@ const ProgramPens = () =>{
                     <p class="text-gray-700 text-base font-roboto mb-4 mt-5">
                         Pada saat ini kebutuhan akan teknologi informasi memegang peranan yang sangat penting dan dimasa yang akan datang akan menjadi tulang punggung pertumbuhan ekonomi...
                     </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition duration-150 ease-in-out">Baca selengkapnya</button>
+                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 ease-in-out">Baca selengkapnya</button>
                 </div>
             </div>
             <div class="flex justify-center">
@@ -25,7 +25,7 @@ const ProgramPens = () =>{
                     <p class="text-gray-700 text-base font-roboto mb-4 mt-11">
                         Departemen Teknik Mekanika Energi (DTME) merupakan departemen yang terdiri dari dua program studi, yaitu Sarjana Terapan Teknik Mekatronika dan Sarjana Terapan ...
                     </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition duration-150 ease-in-out">Baca selengkapnya</button>
+                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 ease-in-out">Baca selengkapnya</button>
                 </div>
             </div>
             <div class="flex justify-center">
@@ -34,7 +34,7 @@ const ProgramPens = () =>{
                     <p class="text-gray-700 text-base font-roboto mb-4 mt-5">
                         Departemen Teknologi Multimedia Kreatif (DTMK) Politeknik Elektronika Negeri Surabaya (PENS) diresmikan pada tahun 2012. Departemen ini menaungi dua Program Studi ...
                     </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition duration-150 ease-in-out">Baca selengkapnya</button>
+                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 ease-in-out">Baca selengkapnya</button>
                 </div>
             </div>
         </div>

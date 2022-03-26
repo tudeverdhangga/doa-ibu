@@ -13,6 +13,7 @@ import AboutPage from "./pages/about";
 import AcademicPage from "./pages/academic";
 import NavBar from "./components/NavBar";
 import FooterBar from "./components/FooterBar";
+import Chatbot from "./components/chatbot";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/academic" element={<AcademicPage />} />
         </Routes>
       </Router>
+      <Chatbot />
     <FooterBar />
     </>
   );
