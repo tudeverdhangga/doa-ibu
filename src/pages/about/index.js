@@ -10,7 +10,7 @@ AboutPage.propTypes = {};
 function AboutPage(props) {
     return (
         <>
-        <div className="p-12 text-center relative overflow-hidden bg-no-repeat bg-cover rounded-lg about-header">
+        <div className="text-center relative overflow-hidden bg-no-repeat bg-cover about-header">
             <div
                 className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
                 style={{backgroundColor:"rgba(0, 0, 0, 0.6)"}}
@@ -34,7 +34,7 @@ function AboutPage(props) {
         <div className="md:px-12 xs:px-6">
             <div className="px-12 mt-12 grid md:grid-cols-3 xs:grid-cols-1">
                 <div className="grid col-span-2 grid-rows-1 gap-4">
-                    <div>
+                    <div className="">
                         <div>
                             <h2 className="font-semibold text-center text-3xl">Sejarah</h2>
                         </div>
@@ -94,7 +94,7 @@ function AboutPage(props) {
                                     <div key={index} className="flex justify-center">
                                         <div key={index} className="rounded-lg shadow-lg bg-white max-w-sm">
                                             <a href="#!">
-                                                <img className="rounded-t-lg" src={`/asset/${value.img}`}
+                                                <img className="rounded-t-lg hover:scale-125" src={`/asset/${value.img}`}
                                                      alt=""/>
                                             </a>
                                             <div className="p-6">
@@ -110,7 +110,7 @@ function AboutPage(props) {
                 </div>
             </div>
         </div>
-        <div className="my-6 container mx-auto">
+        <div className="my-6 container mx-auto bg-scroll content-bg-grey ">
             <div>
                 <h2 className="font-semibold text-center text-3xl">Layanan</h2>
             </div>
@@ -121,7 +121,7 @@ function AboutPage(props) {
                         <div key={idx} className="flex mt-4 px-12">
                             <div className="w-full flex flex-col md:flex-row rounded-lg bg-white shadow-lg">
                                 <img
-                                    className="w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                                    className="w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg hover:rotate-[15deg]"
                                     src={`/asset/${value.img}`} alt=""/>
                                 <div className="p-6 flex flex-col justify-start">
                                     <h5 className="text-gray-900 text-xl font-medium mb-2">{`${value.title}`}</h5>

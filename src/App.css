@@ -43,6 +43,25 @@
   background-size: cover;
   height: 500px;
 }
+.academic-header {
+  background-image: url('../public/asset/graduation.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 450px;
+}
+.contact-header {
+  background-image: url('../public/asset/building.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+
+.content-bg-grey {
+  background-image: url('../public/asset/bg_grey.jpg');
+  background-size: cover;
+  rotation: 180deg;
+  background-color:rgba(0, 0, 0, 0.6);
+}
 
 .pens-primary {
   background-color: #103968;
