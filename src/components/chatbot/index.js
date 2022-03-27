@@ -6,14 +6,30 @@ const Chatbot = () =>{
     const [message, setMessage] = useState('')
     const [messages, setMessages] = useState([])
     const [isOpen, setIsOpen] = useState(0)
-    const path = "http://localhost:5000/response"
+    const path = "http://localhost:5000/"
 
     function openCloseChat(){
         if(isOpen){
             setIsOpen(false)
         }else{
             setIsOpen(true)
-            axios.get(path)
+            axios.get(path + "greeting1")
+            .then(res => {
+                const jwb = {
+                    text : res.data,
+                    author : 'chatbot-PENS'
+                }
+                setMessages(oldMessages => [...oldMessages, jwb])
+            })
+            axios.get(path + "greeting2")
+            .then(res => {
+                const jwb = {
+                    text : res.data,
+                    author : 'chatbot-PENS'
+                }
+                setMessages(oldMessages => [...oldMessages, jwb])
+            })
+            axios.get(path + "greeting3")
             .then(res => {
                 const jwb = {
                     text : res.data,
@@ -32,7 +48,7 @@ const Chatbot = () =>{
         setMessages(oldMessages => [...oldMessages,msg])
         setMessage('')
         const pesan = {'content' : msg.text}  
-        axios.post(path, pesan)
+        axios.post(path + "response", pesan)
         .then(res => {
             const jwb = {
                 text : res.data,
@@ -51,14 +67,14 @@ const Chatbot = () =>{
                 </svg>
             </button>
             <div className={`${isOpen? 'visible' : 'hidden'}  inline-block fixed z-40 bg-white text-black  xl:w-1/3 md:w-1/2 w-3/4 bottom-10 right-32 h-5/6 rounded-lg overflow-hidden`}>
-                <div class={`chat-box`}>
+                <div className={`chat-box`}>
                     <div className={` flex flex-row w-full bg-[#103968] items-center`}>
                         <p className="font-roboto text-lg text-white font-normal tracking-wide pl-5 py-3">Chatbot PENS</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className="absolute right-4" onClick={() => setIsOpen(false)}>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#FFFFFF"/>
                         </svg>
                     </div>
-                    <div className="flex flex-col mt-3 space-y-2 w-full px-5">
+                    <div className="flex flex-col mt-3 space-y-2 w-full px-5 h-96 overflow-y-auto">
                         {
                             messages.map(item => 
                                 <div className={` ${item.author === "me" ? 'flex-row-reverse' : 'flex-row'} flex`}>
@@ -68,7 +84,7 @@ const Chatbot = () =>{
                                                 src="/asset/logo_PENS.png"
                                             />
                                         </div>
-                                        <p className={`${item.author === "me" ? 'bg-[#103968] text-white' : 'bg-gray-300 text-black'} w-auto max-w-xl px-4 py-2 rounded-lg`}>{item.text}</p>
+                                        <p className={`${item.author === "me" ? 'bg-[#103968] text-white' : 'bg-gray-300 text-black'} w-auto max-w-xs px-4 py-2 rounded-lg`}>{item.text}</p>
                                         <div className={`${item.author === "me" ? 'visible' : 'hidden'} bg-white border-2 border-[#103968] w-10 h-10 rounded-full`}>
                                             <p className="mt-[5px] text-[#103968] text-center text-md align-middle font-bold">Me</p>
                                         </div>

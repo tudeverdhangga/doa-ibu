@@ -117,13 +117,13 @@ const NewsSection = () =>{
                         </div>
                         <div className="carousel-caption hidden top-14 left-[54%] md:flex md:flex-col justify-center right-0 pt-0 absolute text-left text-black">
                             <h5 className="font-roboto font-bold text-2xl -mt-10">{news[0].header.title}</h5>
-                            <p className="mt-2 md:hidden">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                            <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
                                 prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
                                 Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
                             <Link
                                 to={`/news/${news[0].id}`}
                             >
-                                <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider">Baca selengkapnya</button>
+                                <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider hover:border-2 hover:bg-white hover:border-[#103968] hover:text-[#103968] hover:font-semibold transition ease-in-out duration-200">Baca selengkapnya</button>
                             </Link>
                         </div>
                     </div>
@@ -142,13 +142,13 @@ const NewsSection = () =>{
                     </div>
                     <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
                         <h5 className="font-roboto font-bold text-2xl -mt-10">{news[1].header.title}</h5>
-                        <p className="mt-2 md:hidden">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                        <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
                             prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
                             Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
                         <Link
                             to={`/news/${news[1].id}`}
                         >
-                            <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider">Baca selengkapnya</button>
+                            <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider hover:border-2 hover:bg-white hover:border-[#103968] hover:text-[#103968] hover:font-semibold transition ease-in-out duration-200">Baca selengkapnya</button>
                         </Link>
                     </div>
                     </div>
@@ -167,13 +167,13 @@ const NewsSection = () =>{
                     </div>
                     <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
                         <h5 className="font-roboto font-bold text-2xl -mt-10">{news[2].header.title}</h5>
-                        <p className="mt-2 md:hidden">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                        <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
                             prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
                             Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
                         <Link
                             to={`/news/${news[2].id}`}
                         >
-                            <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider">Baca selengkapnya</button>
+                            <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider hover:border-2 hover:bg-white hover:border-[#103968] hover:text-[#103968] hover:font-semibold transition ease-in-out duration-200">Baca selengkapnya</button>
                         </Link>
                     </div>
                     </div>
@@ -203,30 +203,42 @@ const NewsSection = () =>{
             </div>
             <ScrollAnimation animateOnce={true} animateIn="animate__fadeInUp" className="animate__animated mx-2">
                 <div className='grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 xl:px-24 px-16 w-full gap-10'>
-                    <div className='relative bg-black text-white'>
-                        <img
-                            src={news[3].img}
-                            alt="..."
-                            className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
-                        />
-                        <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[3].header.title}</p>
-                    </div>
-                    <div className='relative bg-black text-white'>
-                        <img
-                            src={news[4].img}
-                            alt="..."
-                            className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
-                        />
-                        <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[4].header.title}</p>
-                    </div>
-                    <div className='relative bg-black text-white'>
-                        <img
-                            src={news[5].img}
-                            alt="..."
-                            className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
-                        />
-                        <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[5].header.title}</p>
-                    </div>
+                    <Link
+                        to={`/news/${news[3].id}`}
+                    >
+                        <div className='relative bg-black text-white'>
+                            <img
+                                src={news[3].img}
+                                alt="..."
+                                className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
+                            />
+                            <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[3].header.title}</p>
+                        </div>
+                    </Link>
+                    <Link
+                        to={`/news/${news[4].id}`}
+                    >
+                        <div className='relative bg-black text-white'>
+                            <img
+                                src={news[4].img}
+                                alt="..."
+                                className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
+                            />
+                            <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[4].header.title}</p>
+                        </div>
+                    </Link>
+                    <Link
+                        to={`/news/${news[4].id}`}
+                    >
+                        <div className='relative bg-black text-white'>
+                            <img
+                                src={news[5].img}
+                                alt="..."
+                                className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
+                            />
+                            <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[5].header.title}</p>
+                        </div>
+                    </Link>
                 </div>
             </ScrollAnimation>
         </div>

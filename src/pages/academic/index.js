@@ -61,30 +61,22 @@ function AcademicPage(props) {
                     style={{backgroundColor:"rgba(0, 0, 0, 0.6)"}}
                 >
                     <div className="flex justify-center items-center h-full">
-                        <div className="text-white">
-                            <h1 className="font-semibold text-5xl mb-4">PENDIDIKAN DI PENS</h1>
-                            <a
-                                className="inline-block px-7 py-3 mb-1 border-2 border-gray-200 text-gray-200 font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                href="#!"
-                                role="button"
-                                data-mdb-ripple="true"
-                                data-mdb-ripple-color="light"
-                            >
-                                Seleksi Masuk
-                            </a>
+                        <div className="text-white xl:px-56 px-10">
+                            <h1 className="font-roboto text-3xl font-bold">Program Pendidikan</h1>
+                            <h5 className="text-xl pt-2 font-roboto">Adalah komitmen kami untuk mengembangkan secara konsisten sebuah komunitas belajar yang selalu melangkah, dengan selalu membuka tangan untuk merangkul semua pemuda pemudi.</h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="mx-6 md:px-12 px-6">
-                <div className="p-6 drop-shadow-lg rounded-lg hover:bg-gray-50 text-gray-700">
+            <div className="mx-6 md:px-12 px-6 mt-10">
+                <div className="p-6 drop-shadow-lg rounded-lg text-gray-700">
                     <h2 className="font-semibold text-3xl mb-5 text-center">Departemen dan Program Studi</h2>
                     <hr className="my-6 border-gray-300" />
                     <p className="px-6 text-justify">
                         Politeknik Elektronika Negeri Surabaya menyelenggarakan berbagai program pendidikan meliputi program Sarjana Terapan, Diploma 3, dan Pascasarjana. Beberapa fakultas juga menyelenggarakan program kelas kerjasama dengan PLN dan GMF AeroAsia
                     </p>
                 </div>
-                <div className="px-12 py-6">
+                <div className="px-12 py-6 xl:h-[75vh]">
                     <ul className="
                           nav nav-tabs nav-justified
                           flex flex-col

@@ -132,5 +132,17 @@ def response():
     else :
         return("Halo selamat datang di chatbot PENS, ada yang bisa dibantu ?")
 
+@app.route('/greeting1', methods=['GET'])
+def greeting1():
+    return("Halo selamat datang di chatbot PENS")
+
+@app.route('/greeting2', methods=['GET'])
+def greeting2():
+    return("Silahkan tanyakan beberapa informasi tentang PENS")
+
+@app.route('/greeting3', methods=['GET'])
+def greeting3():
+    return("Seperti dimana lokasi PENS atau apa saja prodi yang ada di PENS")
+
 if __name__ == "__main__":
     app.run(debug=True)

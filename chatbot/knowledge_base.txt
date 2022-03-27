@@ -3,5 +3,42 @@
         "id" : 0,
         "keyword" : "halo",
         "jawaban" : "Halo selamat datang"
+    },
+    {
+        "id" : 1,
+        "keyword" : "lokasi pens",
+        "jawaban" : "PENS beralamat di Jl. Raya ITS, Keputih, Kec. Sukolilo, Kota Surabaya, Jawa Timur 60111"
+
+    },
+    {
+        "id" : 2,
+        "keyword" : "facebook pens",
+        "jawaban" : "Facebook PENS dapat diakses melalui akun Politeknik Elektronika Negeri Surabaya"
+
+    },
+    {
+        "id" : 3,
+        "keyword" : "instagram PENS",
+        "jawaban" : "Instagram PENS dapat diakses melalui akun @penseepis"
+    },
+    {
+        "id" : 4,
+        "keyword" : "twitter pens",
+        "jawaban" : "Twitter PENS dapat diakses melalui akun @penseepis"
+    },
+    {
+        "id" : 5,
+        "keyword" : "youtube pens",
+        "jawaban" : "Youtube PENS dapat diakses melalui channel PENSTV"
+    },
+    {
+        "id" : 6,
+        "keyword" : "direktur pens",
+        "jawaban" : "Direktur PENS saat ini adalah Bapak Ali Ridho Barakbah S.Kom, Ph.D"
+    },
+    {
+        "id" : 7,
+        "keyword" : "jumlah departemen pens",
+        "jawaban" : "PENS memiliki 4 deapartemen"
     }
 ]
