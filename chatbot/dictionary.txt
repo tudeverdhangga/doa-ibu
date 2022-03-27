@@ -1,0 +1,21 @@
+{
+    "program studi":["prodi","jurus"],
+    "sosial media" : ["sosmed"],
+    "pendidikan jarak jauh" : ["pjj"],
+    "satuan kredit semester" : ["sks"],
+    "perguruan tinggi" : ["universitas", "kampus"],
+    "kerja praktik" : ["kp", "magang"],
+    "tidak hadir" : ["ijin"],
+    "ujian tengah semester" : ["uts"],
+    "ujian akhir semester" : ["uas"],
+    "ujian perbaikan" : ["up"],
+    "evaluasi" : ["penilaian"],
+    "sanksi" : ["konsekuensi", "hukuman"],
+    "curang" : ["contek"],
+    "proyek akhir" : ["pa", "ta"],
+    "seminar" : ["sidang"],
+    "naik semester percobaan" : ["nsp"],
+    "diploma 1":["d1"],
+    "diploma 3":["d3"],
+    "sarjana terapan" :["d4"]
+}

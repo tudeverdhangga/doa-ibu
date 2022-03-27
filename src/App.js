@@ -13,6 +13,7 @@ import AboutPage from "./pages/about";
 import AcademicPage from "./pages/academic";
 import NavBar from "./components/NavBar";
 import FooterBar from "./components/FooterBar";
+import Chatbot from "./components/chatbot";
 import NewsDetailPage from "./pages/news";
 import 'animate.css/animate.min.css'
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/news/:id" element={<NewsDetailPage />} />
         </Routes>
       </Router>
+      <Chatbot />
     <FooterBar />
     </>
   );
