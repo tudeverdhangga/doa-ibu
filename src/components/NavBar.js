@@ -53,7 +53,7 @@ const NavBar = (props) => {
                 <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/academic">STUDY AT PENS</a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#">CONTACT</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#footer">CONTACT</a>
               </li>
             </ul>
           </div>
