@@ -6,14 +6,30 @@ const Chatbot = () =>{
     const [message, setMessage] = useState('')
     const [messages, setMessages] = useState([])
     const [isOpen, setIsOpen] = useState(0)
-    const path = "http://localhost:5000/response"
+    const path = "http://localhost:5000/"
 
     function openCloseChat(){
         if(isOpen){
             setIsOpen(false)
         }else{
             setIsOpen(true)
-            axios.get(path)
+            axios.get(path + "greeting1")
+            .then(res => {
+                const jwb = {
+                    text : res.data,
+                    author : 'chatbot-PENS'
+                }
+                setMessages(oldMessages => [...oldMessages, jwb])
+            })
+            axios.get(path + "greeting2")
+            .then(res => {
+                const jwb = {
+                    text : res.data,
+                    author : 'chatbot-PENS'
+                }
+                setMessages(oldMessages => [...oldMessages, jwb])
+            })
+            axios.get(path + "greeting3")
             .then(res => {
                 const jwb = {
                     text : res.data,
@@ -32,7 +48,7 @@ const Chatbot = () =>{
         setMessages(oldMessages => [...oldMessages,msg])
         setMessage('')
         const pesan = {'content' : msg.text}  
-        axios.post(path, pesan)
+        axios.post(path + "response", pesan)
         .then(res => {
             const jwb = {
                 text : res.data,

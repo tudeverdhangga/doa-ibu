@@ -16,22 +16,14 @@ function AboutPage(props) {
                 style={{backgroundColor:"rgba(0, 0, 0, 0.6)"}}
             >
                 <div className="flex justify-center items-center h-full">
-                    <div className="text-white">
-                        <h1 className="font-semibold text-5xl mb-4">TENTANG PENS</h1>
-                        <a
-                            className="inline-block px-7 py-3 mb-1 border-2 border-gray-200 text-gray-200 font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                            href="#!"
-                            role="button"
-                            data-mdb-ripple="true"
-                            data-mdb-ripple-color="light"
-                        >
-                            Seleksi Masuk
-                        </a>
+                    <div className="text-white xl:px-56 px-10">
+                        <h1 className="font-roboto text-3xl font-bold">Tentang Politeknik Elektronika Negeri Surabaya</h1>
+                        <h5 className="text-xl pt-2 font-roboto">Politeknik Elektronika Negeri Surabaya adalah kampus modern, komprehensif, terbuka, multi budaya, dan humanis yang mencakup disiplin ilmu yang luas.</h5>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="md:px-12 xs:px-6">
+        <div className="md:px-12 xs:px-6 py-10">
             <div className="px-12 mt-12 grid md:grid-cols-3 xs:grid-cols-1">
                 <div className="grid col-span-2 grid-rows-1 gap-4">
                     <div className="">
@@ -110,9 +102,9 @@ function AboutPage(props) {
                 </div>
             </div>
         </div>
-        <div className="my-6 container mx-auto bg-scroll content-bg-grey ">
+        <div className="my-6 container mx-auto bg-scroll content-bg-grey py-10 ">
             <div>
-                <h2 className="font-semibold text-center text-3xl">Layanan</h2>
+                <h2 className="font-semibold text-center text-3xl mb-5">Layanan</h2>
             </div>
             <div className="grid grid-rows-1 gap-4 px-12">
             {

@@ -65,17 +65,9 @@ function AcademicPage(props) {
                     style={{backgroundColor:"rgba(0, 0, 0, 0.6)"}}
                 >
                     <div className="flex justify-center items-center h-full">
-                        <div className="text-white font-roboto">
-                            <h1 className="font-semibold text-5xl mb-4">PENDIDIKAN DI PENS</h1>
-                            <a
-                                className="inline-block px-7 py-3 mb-1 border-2 border-gray-200 text-gray-200 font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                href="#!"
-                                role="button"
-                                data-mdb-ripple="true"
-                                data-mdb-ripple-color="light"
-                            >
-                                Seleksi Masuk
-                            </a>
+                        <div className="text-white xl:px-56 px-10">
+                            <h1 className="font-roboto text-3xl font-bold">Program Pendidikan</h1>
+                            <h5 className="text-xl pt-2 font-roboto">Adalah komitmen kami untuk mengembangkan secara konsisten sebuah komunitas belajar yang selalu melangkah, dengan selalu membuka tangan untuk merangkul semua pemuda pemudi.</h5>
                         </div>
                     </div>
                 </div>
