@@ -75,6 +75,7 @@ html {
   background-size: cover;
   rotation: 180deg;
   background-color:rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
 .pens-primary {
