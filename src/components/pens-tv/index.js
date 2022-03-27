@@ -12,7 +12,11 @@ const PensTVSection = () =>{
                                 <p className="uppercase font-roboto font-normal tracking-widest text-white text-[56px]">pens tv</p>
                             </div>
                             <p className="font-roboto font-light text-white text-lg lg:ml-20 w-1/2 mt-5">Get to know your personality to find the most suitable study program for you!</p>
-                            <button className="flex w-[220px] xl:w-[300px] bg-yellow-400 shadow-lg shadow-zinc-800 justify-center items-center lg:ml-20 mt-10 py-4 text-white text-lg font-semibold uppercase tracking-widest">subscribe now</button>
+                            <button className="flex w-[220px] xl:w-[300px] bg-yellow-400 shadow-lg shadow-zinc-800 justify-center items-center lg:ml-20 mt-10 py-4 text-white text-lg font-semibold uppercase tracking-widest">
+                                <a style={{display: "table-cell"}} href="https://www.youtube.com/user/penseepis" target="_blank">
+                                    subscribe now
+                                </a>
+                            </button>
                         </div>
                     </ScrollAnimation>
                     <ScrollAnimation animateOnce={true} animateIn="animate__fadeInRight" className="animate__animated">

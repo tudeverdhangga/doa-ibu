@@ -10,6 +10,7 @@ function AcademicPage(props) {
         {
             "title": 'Departemen Teknik Elektro',
             "slug": "DTE",
+            "img": "./asset/depart_teknik_elektro.jpg",
             "prodi" : [
                 "D3 Teknik Elektronika",
                 "D3 Teknik Elektro Industri",
@@ -27,6 +28,7 @@ function AcademicPage(props) {
         {
             "title": 'Departemen Teknik Informatika dan Komputer',
             "slug": "DTIK",
+            "img": "./asset/depart_teknik_informatika.jpg",
             "prodi" : [
                 "D3 Teknik Informatika",
                 "D4 Teknik Informatika",
@@ -38,6 +40,7 @@ function AcademicPage(props) {
         {
             "title": 'Departemen Teknik Mekanika dan Energi',
             "slug": "DTME",
+            "img": "./asset/depart_teknik_meka.jpg",
             "prodi" : [
                 "D4 Teknik Mekatronika",
                 "D4 Sistem Pembangkit Energi",
@@ -46,6 +49,7 @@ function AcademicPage(props) {
         {
             "title": 'Departemen Teknologi Multimedia Kreatif',
             "slug": "DTMK",
+            "img": "./asset/depart_teknik_mmk.jpg",
             "prodi" : [
                 "D3 Multimedia Broadcasting",
                 "D4 Teknologi Game",
@@ -61,7 +65,7 @@ function AcademicPage(props) {
                     style={{backgroundColor:"rgba(0, 0, 0, 0.6)"}}
                 >
                     <div className="flex justify-center items-center h-full">
-                        <div className="text-white">
+                        <div className="text-white font-roboto">
                             <h1 className="font-semibold text-5xl mb-4">PENDIDIKAN DI PENS</h1>
                             <a
                                 className="inline-block px-7 py-3 mb-1 border-2 border-gray-200 text-gray-200 font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
@@ -77,92 +81,29 @@ function AcademicPage(props) {
                 </div>
             </div>
             <div className="mx-6 md:px-12 px-6">
-                <div className="p-6 drop-shadow-lg rounded-lg hover:bg-gray-50 text-gray-700">
-                    <h2 className="font-semibold text-3xl mb-5 text-center">Departemen dan Program Studi</h2>
-                    <hr className="my-6 border-gray-300" />
-                    <p className="px-6 text-justify">
-                        Politeknik Elektronika Negeri Surabaya menyelenggarakan berbagai program pendidikan meliputi program Sarjana Terapan, Diploma 3, dan Pascasarjana. Beberapa fakultas juga menyelenggarakan program kelas kerjasama dengan PLN dan GMF AeroAsia
-                    </p>
-                </div>
-                <div className="px-12 py-6">
-                    <ul className="
-                          nav nav-tabs nav-justified
-                          flex flex-col
-                          md:flex-row
-                          flex-wrap
-                          list-none
-                          border-b-0
-                          pl-0
-                          mb-4
-                        " id="tabs-tabJustify" role="tablist">
+                <div className="pt-16 px-10">
+                    <div className="inline-block mb-12 font-roboto">
+                        <h3 className="w-[40%] mb-10 font-extrabold text-5xl realtive pt-[20px] pr-auto pb-[15px] border-b-4 border-b-[#f2c808] border-solid text-[#103968]">Departemen dan Program Studi</h3>
+                        <p>Politeknik Elektronika Negeri Surabaya menyelenggarakan berbagai program pendidikan meliputi program Sarjana Terapan, Diploma 3, dan Pascasarjana. Beberapa fakultas juga menyelenggarakan program kelas kerjasama dengan PLN dan GMF AeroAsia</p>
+                    </div>
+                    <div className="department grid grid-cols-1 md:grid-cols-2 font-roboto">
                         {
-                            Array.isArray(departments) ?
-                                departments.map((value, idx) => {
-                                    return (
-                                        <li key={idx} className="nav-item flex-grow text-center" role="presentation">
-                                            <a href={`#tabs-${value.slug}Justify`} className={idx == 0 ?
-                                                `
-                                                active
-                                              nav-link
-                                              w-full
-                                              block
-                                              font-medium
-                                              text-sm
-                                              leading-tight
-                                              uppercase
-                                              border-x-0 border-t-0 border-b-2 border-transparent
-                                              px-6
-                                              py-3
-                                              my-2
-                                              hover:border-transparent hover:bg-gray-100
-                                              focus:border-transparent
-                                            ` :
-                                                `
-                                              nav-link
-                                              w-full
-                                              block
-                                              font-medium
-                                              text-sm
-                                              leading-tight
-                                              uppercase
-                                              border-x-0 border-t-0 border-b-2 border-transparent
-                                              px-6
-                                              py-3
-                                              my-2
-                                              hover:border-transparent hover:bg-gray-100
-                                              focus:border-transparent
-                                            `
-                                            } id={`tabs-${value.slug}-tabJustify`} data-bs-toggle="pill" data-bs-target={`#tabs-${value.slug}Justify`} role="tab"
-                                               aria-controls={`tabs-${value.slug}Justify`} aria-selected={idx == 0 ? `true` : `false`}>{value.title}</a>
-                                        </li>
-                                    )
-                                }) : ''
-                        }
-                    </ul>
-                    <div className="tab-content" id="tabs-tabContentJustify">
-                        {
-                            Array.isArray(departments) ?
-                                departments.map((value, idx) => {
-                                    return (
-                                        <div key={idx} className={idx == 0 ? `tab-pane fade show active` : `tab-pane fade show`} id={`tabs-${value.slug}Justify`} role="tabpanel"
-                                             aria-labelledby={`tabs-${value.slug}-tabJustify`}>
-                                            <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-4">
-                                            {
-                                                Array.isArray(value.prodi) ?
-                                                    value.prodi.map((prod, _) => {
-                                                        return (
-                                                            <div
-                                                                key={_}
-                                                                className="block p-6 rounded-lg shadow-lg bg-slate-200 text-center">
-                                                                <h5 className="text-blue-900 text-xl leading-tight font-medium mb-2">{prod}</h5>
-                                                            </div>
-                                                        )
-                                                    }) : ''
-                                            }
+                            departments?.map((value, idx) => {
+                                return (
+                                    <figure className="m-8">
+                                        <div className="galeri">
+                                            <div className="galeri-img">
+                                                <a className="max-h-[150px]">
+                                                    <img className="w-full h-[250px] object-cover top-[50%] left-[50%]" src={value.img}/>
+                                                </a>
+                                            </div>
+                                            <div className="galeri-caption flex items-center pens-primary border-l-4 border-l-[#f2c808] border-solid mx-0 h-16 mt-[-30px] py-[10px] px-[15px] text-center z-[1] relative text-white">
+                                                <a className="text-sm font-bold max-h-16 no-underline absolute ">{value.title}</a>
                                             </div>
                                         </div>
-                                    )
-                                }) : ''
+                                    </figure>
+                                )
+                            })
                         }
                     </div>
                 </div>
