@@ -14,7 +14,6 @@ import AcademicPage from "./pages/academic";
 import NavBar from "./components/NavBar";
 import FooterBar from "./components/FooterBar";
 import NewsDetailPage from "./pages/news";
-// import 'animate.css/animate.css'
 import 'animate.css/animate.min.css'
 
 function App() {
