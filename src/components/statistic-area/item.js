@@ -7,7 +7,7 @@ const Item = props => {
 
     return (
         <>
-            <CountUp end={total} redraw={true}>
+            <CountUp end={total} redraw={true} duration={1}>
                 {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                         <div className="textwidget my-5">

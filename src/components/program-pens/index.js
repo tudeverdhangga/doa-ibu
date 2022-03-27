@@ -8,7 +8,7 @@ const ProgramPens = () =>{
                 {
                     program.program?.map((item) => {
                         return (
-                            <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated mx-2">
+                            <ScrollAnimation animateOnce={true} animateIn="animate__fadeInUp" className="animate__animated mx-2">
                                 <div className="max-h-[28rem] h-[28rem] w-full flex justify-center">
                                     <div className="flex flex-col justify-between px-8 py-10 rounded-sm shadow-xl bg-[#f4f6fa] max-w-sm">
                                         <h5 className="text-[#103968] font-roboto text-lg tracking-widest leading-tight font-medium uppercase mb-2 h-[90px]">{item.department}</h5>
