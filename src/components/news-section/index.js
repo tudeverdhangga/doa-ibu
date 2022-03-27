@@ -78,7 +78,7 @@ const NewsSection = () =>{
 
     return(
         <div className="h-auto pb-20">
-            <div id="carouselExampleCaptions" className="px-5 carousel slide relative w-full overflow-x-hidden h-[450px]" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" className="xl:px-[105px] md:px-[105px] px-14 carousel my-5 slide relative w-full overflow-x-hidden xl:h-[450px] h-auto" data-bs-ride="carousel">
                 <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button
                     type="button"
@@ -105,12 +105,19 @@ const NewsSection = () =>{
                     <div className="carousel-item active relative float-left w-full bg-white">
                         <img
                             src={news[0].img}
-                            className="block w-[560px] h-[360px] shadow-xl shadow-zinc-300"
+                            className="block xl:w-[560px] xl:h-[360px] md:w-1/2 h-auto shadow-xl shadow-zinc-300"
                             alt="..."
                         />
-                        <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:block absolute text-left text-black">
+                        <div className='visible xl:hidden md:hidden bg-gray-200 px-5 py-3 text-sm font-roboto font-semibold'>
+                            <Link
+                                to={`/news/${news[0].id}`}
+                            >
+                                {news[0].header.title}
+                            </Link>
+                        </div>
+                        <div className="carousel-caption hidden top-14 left-[54%] md:flex md:flex-col justify-center right-0 pt-0 absolute text-left text-black">
                             <h5 className="font-roboto font-bold text-2xl -mt-10">{news[0].header.title}</h5>
-                            <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                            <p className="mt-2 md:hidden">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
                                 prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
                                 Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
                             <Link
@@ -123,12 +130,19 @@ const NewsSection = () =>{
                     <div className="carousel-item relative float-left w-full bg-whit">
                     <img
                         src={news[1].img}
-                        className="block w-[560px] h-[360px] shadow-xl shadow-zinc-300"
+                        className="block xl:w-[560px] xl:h-[360px] h-auto md:w-1/2  shadow-xl shadow-zinc-300"
                         alt="..."
                     />
-                    <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:block absolute text-left text-black">
+                    <div className='visible xl:hidden md:hidden bg-gray-200 px-5 py-3 text-sm font-roboto font-semibold'>
+                        <Link
+                            to={`/news/${news[1].id}`}
+                        >
+                            {news[1].header.title}
+                        </Link>
+                    </div>
+                    <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
                         <h5 className="font-roboto font-bold text-2xl -mt-10">{news[1].header.title}</h5>
-                        <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                        <p className="mt-2 md:hidden">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
                             prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
                             Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
                         <Link
@@ -141,12 +155,19 @@ const NewsSection = () =>{
                     <div className="carousel-item relative float-left w-full bg-whit">
                     <img
                         src={news[2].img}
-                        className="block w-[560px] h-[360px] shadow-xl shadow-zinc-300"
+                        className="block xl:w-[560px] xl:h-[360px] md:w-1/2 h-auto shadow-xl shadow-zinc-300"
                         alt="..."
                     />
-                    <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:block absolute text-left text-black">
+                    <div className='visible xl:hidden md:hidden bg-gray-200 px-5 py-3 text-sm font-roboto font-semibold'>
+                        <Link
+                            to={`/news/${news[2].id}`}
+                        >
+                            {news[2].header.title}
+                        </Link>
+                    </div>
+                    <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
                         <h5 className="font-roboto font-bold text-2xl -mt-10">{news[2].header.title}</h5>
-                        <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                        <p className="mt-2 md:hidden">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
                             prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
                             Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
                         <Link
@@ -158,7 +179,7 @@ const NewsSection = () =>{
                     </div>
                 </div>
                 <button
-                    className="carousel-control-prev -ml-10 absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    className="carousel-control-prev xl:-ml-10 -ml-2 absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
                     type="button"
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev"
@@ -169,7 +190,7 @@ const NewsSection = () =>{
                     <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 -mr-10"
+                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 xl:-mr-10 -mr-2"
                     type="button"
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next"
@@ -180,8 +201,8 @@ const NewsSection = () =>{
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated mx-2">
-                <div className='grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 px-24 w-full gap-10'>
+            <ScrollAnimation animateOnce={true} animateIn="animate__fadeInUp" className="animate__animated mx-2">
+                <div className='grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 xl:px-24 px-16 w-full gap-10'>
                     <div className='relative bg-black text-white'>
                         <img
                             src={news[3].img}
