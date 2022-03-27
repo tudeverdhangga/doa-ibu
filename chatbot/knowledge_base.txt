@@ -1,0 +1,7 @@
+[
+    {
+        "id" : 0,
+        "keyword" : "halo",
+        "jawaban" : "Halo selamat datang"
+    }
+]
