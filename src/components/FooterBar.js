@@ -35,7 +35,7 @@ const FooterBar = () => {
             </div>
             <div className="mb-[30px] flex justify-center w-full">
               <div className="text-center">
-                <h5><b>Social Media</b></h5>
+                <h5><b>Sosial Media</b></h5>
                 <ul className="list-none mt-2">
                   <li className="inline-block mx-[10px] text-xs">
                     <a style={{display: "table-cell"}} href="https://www.facebook.com/pens.eepis" target="_blank">
