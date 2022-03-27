@@ -13,6 +13,7 @@ import AppContainer from "../components/AppContainer";
 import ErrorPage from "../pages/404Pages/ErrorPage";
 import AboutPage from "../pages/about";
 import AcademicPage from "../pages/academic";
+import NewsDetailPage from "../pages/news";
 
 export const APP_ROUTE = [
   {
@@ -34,6 +35,13 @@ export const APP_ROUTE = [
     name: "Academic Page",
     path: "/academic",
     element: AcademicPage,
+    private: true,
+    isPasien: true,
+  },
+  {
+    name: "News Detail",
+    path: "/news/:id",
+    element: NewsDetailPage,
     private: true,
     isPasien: true,
   },

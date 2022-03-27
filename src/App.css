@@ -49,6 +49,16 @@
   background-size: cover;
   height: 450px;
 }
+.news-header {
+  /*background-image: url('../public/asset/news_cartoon.jpg');*/
+  /*background-position: center center;*/
+  /*background-size: cover;*/
+  height: 400px;
+}
+.newest-news {
+  height: 100vh;
+  overflow-y: auto;
+}
 .contact-header {
   background-image: url('../public/asset/building.jpg');
   background-position: center center;
@@ -104,6 +114,9 @@
 }
 
 /* Pens TV */
-.pens-tv {
+.bg-pens-tv {
   background-image: url(../public/asset/cartoon_pens.svg);
+}
+.youtube-pens-tv {
+  //padding-top: 56.25% 
 }

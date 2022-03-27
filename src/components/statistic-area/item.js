@@ -1,29 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
 
 const Item = props => {
-    const {label, total, duration} = props.data
-    const [count, setCount] = useState("0")
-
-    useEffect(() => {
-        let start = 0;
-        const end = parseInt(total.substring(0,3))
-        if (start === end) return;
-
-        let totalMilSecDur = parseInt(duration);
-        let incrementTime = (totalMilSecDur / end) * 1000;
-
-        let timer = setInterval(() => {
-            start += 1;
-            setCount(String(start) + total.substring(3))
-            if (start === end) clearInterval(timer)
-        }, incrementTime);
-    }, [total, duration]);
+    const {label, total} = props.data
 
     return (
-        <div className="textwidget">
-            <h3 className="text-xl font-bold">{count}</h3>
-            <h4 className="text-xl">{label}</h4>
-        </div>
+        <>
+            <CountUp end={total} redraw={true}>
+                {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <div className="textwidget my-5">
+                            <h3 className="text-xl font-bold">
+                                <span ref={countUpRef} />
+                            </h3>
+                            <h4 className="text-xl">{label}</h4>
+                        </div>
+                    </VisibilitySensor>
+                )}                
+            </CountUp>
+        </>
     )
 }
 

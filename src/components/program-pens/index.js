@@ -1,43 +1,27 @@
+import program from '../../dump/program.json'
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const ProgramPens = () =>{
     return(
-        <div className="grid grid-cols-4 w-full h-screen px-20 pt-20 pb-28 space-x-5">
-            <div class="flex justify-center">
-                <div class="inline-block px-8 pt-14 rounded-sm shadow-lg bg-white max-w-sm">
-                    <h5 class="text-[#103968] font-roboto text-lg tracking-widest leading-tight font-medium uppercase mb-2">departemen teknik elektro</h5>
-                    <p class="text-gray-700 text-base font-roboto mb-4 mt-11">
-                        Departemen Elektro memuat beberapa program studi yang ada sejak awal berdirinya Politeknik Elektronika Negeri Surabaya. Departemen ini mencakup tiga disiplin ilmu yakni Elektronika ...
-                    </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 transition ease-in-out">Baca selengkapnya</button>
-                </div>
+        <>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 justify-items-center w-full h-full px-5 md:px-20 pt-20 pb-28">
+                {
+                    program.program?.map((item) => {
+                        return (
+                            <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated mx-2">
+                                <div className="max-h-[28rem] h-[28rem] w-full flex justify-center">
+                                    <div className="flex flex-col justify-between px-8 py-10 rounded-sm shadow-xl bg-[#f4f6fa] max-w-sm">
+                                        <h5 className="text-[#103968] font-roboto text-lg tracking-widest leading-tight font-medium uppercase mb-2 h-[90px]">{item.department}</h5>
+                                        <p className="text-gray-700 text-base font-roboto mb-4 mt-5">{item.detail}</p>
+                                        <button type="button" className="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition duration-150 ease-in-out">Baca selengkapnya</button>
+                                    </div>
+                                </div>
+                            </ScrollAnimation>
+                        )
+                    })
+                }
             </div>
-            <div class="flex justify-center">
-                <div class="inline-block px-8 pt-14 rounded-sm shadow-lg bg-white max-w-sm">
-                    <h5 class="text-[#103968] font-roboto text-lg tracking-widest leading-tight font-medium uppercase mb-2">departemen teknik informatika dan komputer</h5>
-                    <p class="text-gray-700 text-base font-roboto mb-4 mt-5">
-                        Pada saat ini kebutuhan akan teknologi informasi memegang peranan yang sangat penting dan dimasa yang akan datang akan menjadi tulang punggung pertumbuhan ekonomi...
-                    </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 ease-in-out">Baca selengkapnya</button>
-                </div>
-            </div>
-            <div class="flex justify-center">
-                <div class="inline-block px-8 pt-14 rounded-sm shadow-lg bg-white max-w-sm">
-                    <h5 class="text-[#103968] font-roboto text-lg tracking-widest leading-tight font-medium uppercase mb-2">departemen teknik mekanika energi</h5>
-                    <p class="text-gray-700 text-base font-roboto mb-4 mt-11">
-                        Departemen Teknik Mekanika Energi (DTME) merupakan departemen yang terdiri dari dua program studi, yaitu Sarjana Terapan Teknik Mekatronika dan Sarjana Terapan ...
-                    </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 ease-in-out">Baca selengkapnya</button>
-                </div>
-            </div>
-            <div class="flex justify-center">
-                <div class="inline-block px-8 pt-14 rounded-sm shadow-lg bg-white max-w-sm">
-                    <h5 class="text-[#103968] font-roboto text-lg tracking-widest leading-tight font-medium uppercase mb-2">departemen teknologi multimedia kreatif</h5>
-                    <p class="text-gray-700 text-base font-roboto mb-4 mt-5">
-                        Departemen Teknologi Multimedia Kreatif (DTMK) Politeknik Elektronika Negeri Surabaya (PENS) diresmikan pada tahun 2012. Departemen ini menaungi dua Program Studi ...
-                    </p>
-                    <button type="button" class="mt-5 inline-block px-6 py-2.5 bg-[#103968] text-white font-normal text-xs leading-tight font-roboto tracking-wider rounded shadow-md transition hover:bg-white hover:text-[#103968] hover:border-[#103968] hover:border-2 duration-500 ease-in-out">Baca selengkapnya</button>
-                </div>
-            </div>
-        </div>
+        </>
     )
 }
 

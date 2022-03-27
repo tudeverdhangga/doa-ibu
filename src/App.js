@@ -14,6 +14,9 @@ import AcademicPage from "./pages/academic";
 import NavBar from "./components/NavBar";
 import FooterBar from "./components/FooterBar";
 import Chatbot from "./components/chatbot";
+import NewsDetailPage from "./pages/news";
+// import 'animate.css/animate.css'
+import 'animate.css/animate.min.css'
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
             <Route path="/" element={<AppContainer />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/academic" element={<AcademicPage />} />
+            <Route path="/news/:id" element={<NewsDetailPage />} />
         </Routes>
       </Router>
       <Chatbot />
