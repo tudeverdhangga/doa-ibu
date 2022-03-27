@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 ## Installation Backend
-Go to chatbot direcotry and run :
+Go to chatbot directory and run :
 
 ```sh
 pip install
