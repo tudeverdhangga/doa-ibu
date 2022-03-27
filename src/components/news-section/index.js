@@ -1,5 +1,6 @@
 import 'tw-elements'
 import {Link} from "react-router-dom";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const NewsSection = () =>{
     const news = [
@@ -179,44 +180,34 @@ const NewsSection = () =>{
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className="flex flex-row space-x-7 justify-center w-full h-auto relative">
-                <div className='flex'>
-                    <div className=' bg-black'>
+            <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated mx-2">
+                <div className='grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 px-24 w-full gap-10'>
+                    <div className='relative bg-black text-white'>
                         <img
                             src={news[3].img}
                             alt="..."
-                            className='w-[360px] h-[400px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
+                            className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
                         />
+                        <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[3].header.title}</p>
                     </div>
-                    <div className="absolute z-10 text-white font-roboto font-semibold w-[320px] mx-5 text-lg bottom-5">
-                        {news[3].header.title}
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className=' bg-black '>
+                    <div className='relative bg-black text-white'>
                         <img
                             src={news[4].img}
                             alt="..."
-                            className='w-[360px] h-[400px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
+                            className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
                         />
+                        <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[4].header.title}</p>
                     </div>
-                    <div className="absolute z-10 text-white font-roboto font-semibold w-[320px] mx-5 text-lg bottom-5">
-                        {news[4].header.title}
-                    </div>
-                </div>
-                <div className='flex'>
-                    <div className=' bg-black '>
+                    <div className='relative bg-black text-white'>
                         <img
                             src={news[5].img}
                             alt="..."
-                            className='w-[360px] h-[400px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
+                            className='w-[360px] h-[440px] object-cover opacity-50 hover:blur-sm transition duration-300 ease-in-out'
                         />
-                    </div>
-                    <div className="absolute z-10 text-white font-roboto font-semibold w-[320px] mx-5 text-lg bottom-5">
-                        {news[5].header.title}
+                        <p className="absolute mx-4 bottom-6 text-white font-roboto font-semibold text-lg">{news[5].header.title}</p>
                     </div>
                 </div>
-            </div>
+            </ScrollAnimation>
         </div>
     )
 }

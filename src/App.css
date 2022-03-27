@@ -118,5 +118,17 @@
   background-image: url(../public/asset/cartoon_pens.svg);
 }
 .youtube-pens-tv {
-  //padding-top: 56.25% 
+  padding-top: 56.25% 
+}
+
+.bg-news-1{
+  background-image: url(../public/asset/news_6.jpg);
+}
+
+.bg-news-2{
+  background-image: url(../public/asset/news_2.jpg);
+}
+
+.bg-news-3{
+  background-image: url(../public/asset/news_3.jpg);
 }
