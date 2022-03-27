@@ -59,7 +59,6 @@ function NewsDetailPage(props) {
                         </div>
                     </section>
                     <section id="newsContent" className="mx-8 p-6 rounded-lg text-gray-500 text-center">
-                        {/*<h2 className="font-semibold text-3xl mb-5">Hello world!</h2>*/}
                         <hr className="my-6 border-gray-300" />
                         <p className="text-md text-justify">{newsDetail !== null ? newsDetail.body : ""}</p>
                     </section>
