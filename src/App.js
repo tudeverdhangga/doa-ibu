@@ -15,7 +15,6 @@ import NavBar from "./components/NavBar";
 import FooterBar from "./components/FooterBar";
 import Chatbot from "./components/chatbot";
 import NewsDetailPage from "./pages/news";
-// import 'animate.css/animate.css'
 import 'animate.css/animate.min.css'
 
 function App() {

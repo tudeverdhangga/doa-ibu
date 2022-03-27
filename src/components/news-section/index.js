@@ -77,8 +77,8 @@ const NewsSection = () =>{
     ]
 
     return(
-        <div className="h-auto pb-20">
-            <div id="carouselExampleCaptions" className="xl:px-[105px] md:px-[105px] px-14 carousel my-5 slide relative w-full overflow-x-hidden xl:h-[450px] h-auto" data-bs-ride="carousel">
+        <div className="h-auto pt-10 pb-[6rem]">
+            <div id="carouselExampleCaptions" className="xl:px-[105px] md:px-[105px] px-14 carousel mt-5 mb-[2.5rem] slide relative w-full overflow-x-hidden xl:h-[450px] h-auto" data-bs-ride="carousel">
                 <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button
                     type="button"
@@ -87,18 +87,21 @@ const NewsSection = () =>{
                     className="active"
                     aria-current="true"
                     aria-label="Slide 1"
+                    style={{backgroundColor: '#103968'}}
                     ></button>
                     <button
                     type="button"
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide-to="1"
                     aria-label="Slide 2"
+                    style={{backgroundColor: '#103968'}}
                     ></button>
                     <button
                     type="button"
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide-to="2"
                     aria-label="Slide 3"
+                    style={{backgroundColor: '#103968'}}
                     ></button>
                 </div>
                 <div className="carousel-inner relative w-full overflow-hidden py-10">
@@ -116,8 +119,8 @@ const NewsSection = () =>{
                             </Link>
                         </div>
                         <div className="carousel-caption hidden top-14 left-[54%] md:flex md:flex-col justify-center right-0 pt-0 absolute text-left text-black">
-                            <h5 className="font-roboto font-bold text-2xl -mt-10">{news[0].header.title}</h5>
-                            <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                            <h5 className="font-roboto font-bold text-lg lg:text-2xl -mt-10">{news[0].header.title}</h5>
+                            <p className="mt-2 hidden lg:block ">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
                                 prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
                                 Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
                             <Link
@@ -127,55 +130,55 @@ const NewsSection = () =>{
                             </Link>
                         </div>
                     </div>
+                    <div className="carousel-item relative float-left w-full bg-white">
+                        <img
+                            src={news[1].img}
+                            className="block xl:w-[560px] xl:h-[360px] h-auto md:w-1/2  shadow-xl shadow-zinc-300"
+                            alt="..."
+                        />
+                        <div className='visible xl:hidden md:hidden bg-gray-200 px-5 py-3 text-sm font-roboto font-semibold'>
+                            <Link
+                                to={`/news/${news[1].id}`}
+                            >
+                                {news[1].header.title}
+                            </Link>
+                        </div>
+                        <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
+                            <h5 className="font-roboto font-bold text-lg lg:text-2xl -mt-10">{news[1].header.title}</h5>
+                            <p className="mt-2 hidden lg:block ">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                                prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
+                                Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
+                            <Link
+                                to={`/news/${news[1].id}`}
+                            >
+                                <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider">Baca selengkapnya</button>
+                            </Link>
+                        </div>
+                    </div>
                     <div className="carousel-item relative float-left w-full bg-whit">
-                    <img
-                        src={news[1].img}
-                        className="block xl:w-[560px] xl:h-[360px] h-auto md:w-1/2  shadow-xl shadow-zinc-300"
-                        alt="..."
-                    />
-                    <div className='visible xl:hidden md:hidden bg-gray-200 px-5 py-3 text-sm font-roboto font-semibold'>
-                        <Link
-                            to={`/news/${news[1].id}`}
-                        >
-                            {news[1].header.title}
-                        </Link>
-                    </div>
-                    <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
-                        <h5 className="font-roboto font-bold text-2xl -mt-10">{news[1].header.title}</h5>
-                        <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
-                            prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
-                            Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
-                        <Link
-                            to={`/news/${news[1].id}`}
-                        >
-                            <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider hover:border-2 hover:bg-white hover:border-[#103968] hover:text-[#103968] hover:font-semibold transition ease-in-out duration-200">Baca selengkapnya</button>
-                        </Link>
-                    </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full bg-whit">
-                    <img
-                        src={news[2].img}
-                        className="block xl:w-[560px] xl:h-[360px] md:w-1/2 h-auto shadow-xl shadow-zinc-300"
-                        alt="..."
-                    />
-                    <div className='visible xl:hidden md:hidden bg-gray-200 px-5 py-3 text-sm font-roboto font-semibold'>
-                        <Link
-                            to={`/news/${news[2].id}`}
-                        >
-                            {news[2].header.title}
-                        </Link>
-                    </div>
-                    <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
-                        <h5 className="font-roboto font-bold text-2xl -mt-10">{news[2].header.title}</h5>
-                        <p className="mt-2">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
-                            prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
-                            Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
-                        <Link
-                            to={`/news/${news[2].id}`}
-                        >
-                            <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider hover:border-2 hover:bg-white hover:border-[#103968] hover:text-[#103968] hover:font-semibold transition ease-in-out duration-200">Baca selengkapnya</button>
-                        </Link>
-                    </div>
+                        <img
+                            src={news[2].img}
+                            className="block xl:w-[560px] xl:h-[360px] md:w-1/2 h-auto shadow-xl shadow-zinc-300"
+                            alt="..."
+                        />
+                        <div className='visible xl:hidden md:hidden bg-gray-200 px-5 py-3 text-sm font-roboto font-semibold'>
+                            <Link
+                                to={`/news/${news[2].id}`}
+                            >
+                                {news[2].header.title}
+                            </Link>
+                        </div>
+                        <div className="carousel-caption hidden top-14 left-[54%] right-0 pt-0 md:flex md:flex-col justify-center absolute text-left text-black">
+                            <h5 className="font-roboto font-bold text-lg lg:text-2xl -mt-10">{news[2].header.title}</h5>
+                            <p className="mt-2 hidden lg:block ">Surabaya, pens.ac.id - Kembali mengharumkan kampus Politeknik Elektronika Negeri Surabaya (PENS) melalui 
+                                prestasi, kali ini lima Mahasiswa D3 Teknik Informatika berhasil meraih Silver Medal dalam Youth International 
+                                Science Fair (YISF) 2022. Kompetisi tingkat internasional ini, digelar selama tiga hari (14-17/3), dan bertempat...</p>
+                            <Link
+                                to={`/news/${news[2].id}`}
+                            >
+                                <button className="inline-block bg-[#103968] shadow-md leading-tight shadow-zinc-400  justify-center items-center mt-8 py-2.5 px-6 rounded-md text-white font-roboto  text-sm font-normal tracking-wider">Baca selengkapnya</button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <button
